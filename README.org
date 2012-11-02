@@ -1,0 +1,17 @@
+
+In mini project 1, I displayed the ball-and-stick models of CO2, C2H6, and C2H4 molecules and the electron fog around it.
+
+* Introduction
+During previous practice, we plotted the electron density with isosurfaces to visualize the electron distribution in a molecule. Here we visualized the electron distribution in a fog style.
+
+The method used for carbon dioxide and ethane, ethylene was similar, but with a little difference.
+
+The first example is carbon dioxide, in which a dft calculation was done in the first step, to get  positions of the atoms and a CHG file. The CHG file contains the lattice vectors, atomic coordinates and charge density at each tenth step. In the second step, I manually imput the atoms' positions and import the CHG file.
+
+In the second and third example, I plotted and compared the electron density of ethane and ethylene. It is clear that electron density around the double bond in ethylene is denser than the single bond in its homolog- ethylene. In these two examples, I combined DFT calculation and plotting part together in to one step.
+
+In the process, Numpy, ASE, Mayavi pakages were used as computing, simulating and visualizing tools. Jasp was also used to do DFT calculations.
+
+
+* How to use my code and limitations.
+The code can be modified to visualize electron density of similar simple molecules like oxygen and linear compounds. But it is hard to modified to present complicated molecules, which is also the limitation of the code.
